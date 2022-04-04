@@ -91,11 +91,13 @@ height: 5px;
 
 
 /* matchScoreComponent Style */
+.score-container {margin-top: -1rem;}
 .black-bar  {
   background-color: black;
-  padding: .5rem 1rem;
-  border-radius: 10px 10px 0px 0px;
+  padding: 1rem 1rem;
+  border-radius: 0px 0px 0px 0px;
 }
+.black-bar h2 {font-size: .875rem; color: #fff; font-weight: 600;}
 .analytics img {width: 1.7rem; height: 1.7rem;}
 .analytics h2 {margin-left: .7rem; font-size: .875rem; color: #fff;}
 .analytics span{
@@ -105,3 +107,11 @@ height: 5px;
   margin-left: 0.2rem;
   display: inline-block;
 }
+/* Player Team Score */
+.player-detail .players-info {
+background-color: #000;
+width: 60%;
+}
+.player-detail img {height: 10rem; padding: 0 1rem;}
+.player-name img {    width: 58px;height: 20px;}
+.player-name h3 {font-size: 1rem; color: #fff;}

@@ -88,3 +88,20 @@ height: 5px;
 .bars > .green-bar  {background-color: #27ae60;}
 .bars > .red-bar  {background-color: red;}
 .bars > .drawer-bar  {background-color: #c6c6c6;}
+
+
+/* matchScoreComponent Style */
+.black-bar  {
+  background-color: black;
+  padding: .5rem 1rem;
+  border-radius: 10px 10px 0px 0px;
+}
+.analytics img {width: 1.7rem; height: 1.7rem;}
+.analytics h2 {margin-left: .7rem; font-size: .875rem; color: #fff;}
+.analytics span{
+  font-size: .6rem;
+  color: #fff;
+  margin-top: -.8rem;
+  margin-left: 0.2rem;
+  display: inline-block;
+}

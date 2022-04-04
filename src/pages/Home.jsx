@@ -5,6 +5,7 @@ import $ from 'jquery';
 // Import Swiper styles
 import "swiper/css";
 import { EffectCoverflow, Navigation } from "swiper";
+import MatchScoreComponent from "./MatchScoreComponent";
 
 async function fetchFeatureMatches() {
     var myHeaders = new Headers();
@@ -73,6 +74,7 @@ function Home(props) {
                             </div>
                         </div>
                     </header>
+                    <MatchScoreComponent />
                 </div>
             </>
         );

@@ -127,3 +127,17 @@ height: 5px;
   text-align: center;
   border-radius: 100%;
 }
+.score-container {width: 65%;}
+.player-info {background: #000;height: 10rem;}
+.player-info > img {height: 100%; padding: 0 1rem;}
+
+.flag-player-name img {width: 1.7rem;height: 1.3rem;margin-left: .5rem; margin-right: .5rem;}
+
+.flag-player-name {padding: .5rem;}
+
+.flag-player-name {padding: .5rem;}
+.flag-player-name h2, .player-scores h3 {font-size: 1rem;font-weight: 400;color: #fff;}
+.player-team-score {padding: .5rem 1rem;background: #4b4a4a;border-radius: 9999px;}
+h3.time-with-ball {padding: .5rem;color: #cacaca;font-weight: bold;}
+
+h3.time-with-ball span {color: #fff;font-weight: normal;font-size: 1.2rem;}

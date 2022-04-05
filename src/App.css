@@ -127,13 +127,19 @@ height: 5px;
   text-align: center;
   border-radius: 100%;
 }
+
 .score-container {width: 65%;}
-.player-info {background: #000;height: 10rem;}
+.player-info {background: #000;height: 10rem; }
 .player-info > img {height: 100%; padding: 0 1rem;}
+.player-info-score  {width: 50%;}
+.flag-player-name img,.flag-with-name img {width: 1.7rem;height: 1.3rem;margin-left: .5rem; margin-right: .5rem;}
 
-.flag-player-name img {width: 1.7rem;height: 1.3rem;margin-left: .5rem; margin-right: .5rem;}
 
+.team-with-score {
+  padding: .5rem;
+}
 .flag-player-name {padding: .5rem;}
+.flag-player-name img {    margin-left: 0;}
 
 .flag-player-name {padding: .5rem;}
 .flag-player-name h2, .player-scores h3 {font-size: 1rem;font-weight: 400;color: #fff;}
@@ -141,3 +147,23 @@ height: 5px;
 h3.time-with-ball {padding: .5rem;color: #cacaca;font-weight: bold;}
 
 h3.time-with-ball span {color: #fff;font-weight: normal;font-size: 1.2rem;}
+.team-palyer-name-score {flex:1}
+.teams-score {margin: .5rem;}
+.vrt-divider{    
+  border-left: 1px solid #ccc;
+  padding: 0 0rem;
+}
+.flag-with-name h2 {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.team-score-only .scores {font-weight: bold;color: #b30808;}
+
+.team-score-only .team-overs {color: #7a7a7a;font-weight: bold;}
+.team-palyer-name-score {
+  font-size: 1rem;
+  color: #ccc;
+  padding: .5rem;
+}
+.hzt-divider {padding-top: .5rem;border-bottom: 1px solid #ccc;}

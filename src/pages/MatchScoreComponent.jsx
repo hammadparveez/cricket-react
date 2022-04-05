@@ -40,8 +40,8 @@ export default function MatchScoreComponent() {
                 <div className="teams-score">
 
                     <div className="single-team-score">
-                        <div className="d-flex team-with-score">
-                            <div className="flag-with-name">
+                        <div className="d-flex justify-content-between team-with-score">
+                            <div className="flag-with-name d-flex">
                                 <img srcSet="https://images.cricket.com/teams/7_flag_safari.png" alt="" />
                                 <h2>South Africa</h2>
                             </div>
@@ -52,14 +52,20 @@ export default function MatchScoreComponent() {
 
                         </div>
 
-                        <div className="team-player">
-                            <div className="team-palyer-name-score">
+                        <div className="team-player d-flex">
+                            <div className="team-palyer-name-score d-flex justify-content-between">
                                 <span>Teamba </span>
+                                <span>93 </span>
+                            </div>
+                            <div className="vrt-divider"></div>
+                            <div className="team-palyer-name-score d-flex justify-content-between">
+                                <span>Teamba </span>
+                                <span>93/4 </span>
                             </div>
                         </div>
                     </div>
 
-
+                    <div className="hzt-divider"></div>
 
 
 

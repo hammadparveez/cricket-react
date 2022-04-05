@@ -43,10 +43,10 @@ export default function MatchScoreComponent() {
         <div className="row">
             <div className="col-sm-6">
                 <div className="player-info d-flex align-items-center">
-                    <img alt="" srcset={"https://images.cricket.com/players/61910_headshot_safari.png"} />
+                    <img alt="" srcSet={"https://images.cricket.com/players/61910_headshot_safari.png"} />
                     <div className="player-info-score ">
                         <div className="d-flex flag-player-name">
-                            <img alt="" srcset="https://images.cricket.com/teams/5_flag_safari.png" />
+                            <img alt="" srcSet="https://images.cricket.com/teams/5_flag_safari.png" />
                             <h2>{card?.batting[0].playerName}</h2>
 
                         </div>
@@ -59,10 +59,10 @@ export default function MatchScoreComponent() {
 
                 </div>
                 <div className="player-info d-flex align-items-center">
-                    <img alt="" srcset="https://images.cricket.com/players/61910_headshot_safari.png" />
+                    <img alt="" srcSet="https://images.cricket.com/players/61910_headshot_safari.png" />
                     <div className="player-info-score ">
                         <div className="d-flex flag-player-name">
-                            <img alt="" srcset="https://images.cricket.com/teams/5_flag_safari.png" />
+                            <img alt="" srcSet="https://images.cricket.com/teams/5_flag_safari.png" />
                             <h2>{card?.bowling[0].playerName}</h2>
 
                         </div>

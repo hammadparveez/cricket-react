@@ -107,11 +107,23 @@ height: 5px;
   margin-left: 0.2rem;
   display: inline-block;
 }
-/* Player Team Score */
-.player-detail .players-info {
-background-color: #000;
-width: 60%;
+.overs {font-size: 14px;}
+/* Live Projection */
+.grey-bar,.projected-status  {
+  padding: 1rem;
+  background: linear-gradient(90deg,hsla(210,7%,95%,0),#f0f1f2,#f0f1f2,hsla(210,7%,95%,0));
 }
-.player-detail img {height: 10rem; padding: 0 1rem;}
-.player-name img {    width: 58px;height: 20px;}
-.player-name h3 {font-size: 1rem; color: #fff;}
+
+.grey-bar  h2{
+  font-size: .9rem;
+  font-weight: normal;
+}
+.projected-status span{font-size: .8rem;}
+.ball {
+  width: 25px;
+  height: 25px;
+  background: #41ad67;
+  color: #fff;
+  text-align: center;
+  border-radius: 100%;
+}

@@ -1,38 +1,48 @@
 export default function MatchScoreComponent() {
     return <div className="container score-container">
+        <CriclyticsBar />
+        <div className="player-info-wrapper">
+            <div className="row">
+                <div className="col-sm-6">
+                    <TitleWithArrow />
+                    <div className="live-balls d-flex justify-content-between">
+                        <div className="ball">6</div>
+                    </div>
+                    <TitleWithArrow />
+                    <div className="projected-status d-flex justify-content-between">
+                        <span>Live</span>
+                        <span>Team</span>
+                        <span>Projected</span>
+                    </div>
+                </div>
+                <div className="col-sm-6">
+                    <div className="live-player-projections">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>;
+}
+
+
+function TitleWithArrow() {
+    return <div className="grey-bar d-flex justify-content-between">
+        <h2>Last 10 Balls</h2>
+        <img srcSet="https://www.cricket.com/svgs/RightSchevronBlack.svg" alt="" />
+    </div>
+}
+
+function CriclyticsBar() {
+    return <>
         <div className="black-bar d-flex justify-content-between">
             <h2 className="match-summary">Match Summary</h2>
             <a href="#">
                 <img srcSet="https://www.cricket.com/svgs/RightSchevronWhite.svg" alt="" />
             </a>
         </div>
-        <section className="d-flex player-detail">
-            <div className="players-info">
-                <div className="d-flex align-items-center">
-                    <div className="player-img"> <img alt="" srcset="https://images.cricket.com/players/70291_headshot_safari.png" /> </div>
-                    <div className="player-team-score">
-                        <div className="d-flex player-name">
-                            <img srcSet="https://images.cricket.com/teams/2_flag_safari.png" alt="" />
-                            <h3>Muhammad Ajmal Joy</h3>
-                        </div>
 
-                    </div>
-                    <div className="test">
-                        <div className="d-flex total-scores">
-                            <h2>137(326)</h2>
-                            <span> & </span>
-                            <h2>4(9)</h2>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div className="teams-info">
-
-            </div>
-            <div></div>
-        </section>
-    </div>;
+    </>
 }
 
 function CriclynticsBar() {

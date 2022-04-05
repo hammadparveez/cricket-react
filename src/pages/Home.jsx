@@ -62,13 +62,7 @@ function Home(props) {
                                     onSwiper={(swiper) => console.log(swiper)}
                                 >
                                     {data.map((item, index) => <SwiperSlide key={index} >     <SwiperSlideCard item={item} /></SwiperSlide>)}
-                                    {/* <SwiperSlide>
 
-                                    <SwiperSlideCard />
-                                </SwiperSlide>
-                             
-                                <SwiperSlide>     <SwiperSlideCard /></SwiperSlide>
-                                <SwiperSlide>     <SwiperSlideCard /></SwiperSlide> */}
 
                                 </Swiper>
                             </div>
@@ -111,13 +105,14 @@ function SwiperSlideCard(props) {
                 </div>
                 <div className="scores">
 
-                    <h3 className="d-inline">{item.matchScore[0].teamScore.length == 0 ? new Date(parseInt(item.startDate)).toDateString() : item.matchScore[0].teamScore[0]?.runsScored}</h3>
-                    <span className="overs"> {item.matchScore[0].teamScore[0]?.overs} </span>
+                    <h3 className="d-inline">{item.matchScore[0].teamScore.length == 0 ? new Date(parseInt(item.startDate)).toDateString() : getScores(item)}</h3>
+                    <span className="overs"> ({item.matchScore[0].teamScore[0]?.overs}) </span>
                 </div>
             </div>
             <div className="d-flex align-items-center flags-score flags-items " >
                 <img src={`https://images.cricket.com/teams/${item.matchScore[1].teamID}_flag_safari.png`} alt="" />
                 <h3> {item.matchScore[1].teamShortName} </h3>
+
             </div>
         </div>
 
@@ -194,4 +189,7 @@ function getBarWidth(item) {
     return percent;
 }
 
+function getScores(item) {
+    return `${item.matchScore[0].teamScore[0].runsScored}/${item.matchScore[0].teamScore[0].wickets}`
+}
 export default Home;
